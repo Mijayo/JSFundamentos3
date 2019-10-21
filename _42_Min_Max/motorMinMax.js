@@ -11,7 +11,7 @@ function llamaFuncion() {
     }
 
     // Numero 2
-    let num2 = prompt('¿Cual es el IVA del articulo?');
+    let num2 = prompt('Indique un numero entre 1 y 100');
     // Controlamos si el campo esta vacio
     while (num2 === "") {
         // Campo vacio
@@ -19,15 +19,19 @@ function llamaFuncion() {
         // Num2
         num2 = prompt('Indique un numero entre 1 y 100');
     }
-    // Llamamos a la funcion precioIVA() para hacer los calculos
+    // Llamamos a la funcion numeroAleatorio() para hacer los calculos del numero random
     numeroAleatorio(parseInt(num1), parseInt(num2));
 }
 
 
 function numeroAleatorio(min, max) {
+    // Definimos variable
     let resultado = document.getElementById('resultado');
-    resultado.innerHTML += `<div><p>Primer numero</p>${min} €</div>`;
-    resultado.innerHTML += `<div><p>Segundo numero</p> ${max} €</div>`;
-    resultado.innerHTML += `<div><p>Numero aleatorio generado</p> ${Math.round(Math.random() * (max - min) + min)} €</div>`;
-    // return Math.round(Math.random() * (max - min) + min);
+
+    // Pintamos en el HTML ambos numeros introducidos
+    resultado.innerHTML += `<div><p>Primer numero</p>${min}</div>`;
+    resultado.innerHTML += `<div><p>Segundo numero</p> ${max}</div>`;
+
+    // Resultado final
+    resultado.innerHTML += `<div><p>Numero aleatorio generado con el primer numero y el segundo introducidos</p> ${Math.round(Math.random() * (max - min) + min)}</div>`;
 }
