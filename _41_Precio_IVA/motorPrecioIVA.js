@@ -36,6 +36,6 @@ function precioIVA(precio, IVA) {
     let precioSinIVA = precio;
     let precioConIVA = precio + ((iva / 100) * precio);
     let resultadoSinIVA = document.getElementById('resultado');
-    resultadoSinIVA.innerHTML += `<div><p>Precio sin IVA</p>${precioSinIVA}</div>`;
-    resultadoSinIVA.innerHTML += `<div><p>Precio con IVA</p> ${precioConIVA}</div>`;
+    resultadoSinIVA.innerHTML += `<div><p>Precio sin IVA</p>${precioSinIVA} €</div>`;
+    resultadoSinIVA.innerHTML += `<div><p>Precio con IVA</p> ${precioConIVA} €</div>`;
 }
