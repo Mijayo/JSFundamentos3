@@ -1,6 +1,6 @@
 function llamaFuncion() {
     // Def el numero de tiradas en 30
-    const numTiradas = 30;
+    const numTiradas = 360;
     // Variables
     let num1, num2, resultado;
     // Contador para controlar hasta que lleguemos al numero de tiradas

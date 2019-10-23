@@ -10,24 +10,34 @@
 </head>
 
 <style>
+    #txt {
+        display: flex;
+        height: 100px;
+        width: 35%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+    
     #resultado {
+        cursor: pointer;
         text-align: center;
-        border: 1px solid red;
-        width: 50%;
+        margin-top: 25px;
+        width: 100%;
         height: 200px;
+        font-size: 40px;
     }
 </style>
 
 <body>
     <h1>Ejecicios JavaScipt Fundamentos 3</h1>
-    <h2>5 valores aleatorios</h2>
-    <p>Crear un vector con 5 valores aleatorios comprendidos entre 1 y
-        <br> 1000. Luego extraer los dos últimos elementos sumarlos y mostrarlos.
-        <br>Imprimir también el tamaño final del vector.
+    <h2>Doble click por dos</h2>
+    <p>Realizar un programa que muestre en un div el número 2. Cada vez que
+        <br> se hace doble clic sobre el mismo duplicar el valor contenido en el div.
     </p>
-    <div id="resultado">
-        Aqui imprimimos el numero
-        <span id="porDos">2</span>
+    <div id="txt">
+        <div id="resultado">
+        </div>
     </div>
 </body>
 <script src="motorDiv2.js"></script>
