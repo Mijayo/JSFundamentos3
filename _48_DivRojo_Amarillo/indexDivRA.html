@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Diego Vallejo JS Fundamentos 3</title>
+</head>
+
+<style>
+    #txt {
+        cursor: pointer;
+        height: 100px;
+        width: 45%;
+        background-color: rgba(240, 36, 36, 0.747);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+    
+    #txt p {
+        text-align: center;
+        color: white;
+        padding-top: 35px;
+    }
+</style>
+
+<body>
+    <h1>Ejecicios JavaScipt Fundamentos 3</h1>
+    <h2>Div de Rojo a Amarillo</h2>
+    <p>Elaborar un programa que muestre un div de color rojo. Cuando se presione cambiar el
+        <br> color a amarillo y luego de soltar el botón del mouse volver a pintar de rojo.
+    </p>
+    <div id="txt" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        <p id="txtD">div</p>
+    </div>
+</body>
+<script src="motorDivRA.js"></script>
+
+</html>
